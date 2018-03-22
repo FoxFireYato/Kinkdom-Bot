@@ -5,6 +5,7 @@
   "main": "yuno.js",
   "scripts": {
     "test": "eslint ."
+    "start": "node start.js"
   },
   "repository": {
     "type": "git",
