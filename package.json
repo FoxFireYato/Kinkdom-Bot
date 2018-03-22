@@ -3,9 +3,10 @@
   "version": "0.3.0",
   "description": "a neat lil discord boat",
   "main": "yuno.js",
-  "scripts": {
-    "test": "eslint ."
-  },
+    "scripts": {
+        "start": "node start.js",
+        "test": "eslint ."
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aetheryx/Yuno_Gasai.git"
