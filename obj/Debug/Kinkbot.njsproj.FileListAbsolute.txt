@@ -1,0 +1,2 @@
+C:\Users\Aidan_2\source\repos\Kinkbot\Kinkbot\obj\Debug\Kinkbot.njsproj.CoreCompileInputs.cache
+C:\Users\Aidan_2\source\repos\Kinkbot\Kinkbot\bin\Microsoft.NodejsTools.WebRole.dll

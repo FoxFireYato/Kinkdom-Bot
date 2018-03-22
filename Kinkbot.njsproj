@@ -1,0 +1,103 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">14.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>Kinkbot</Name>
+    <RootNamespace>Kinkbot</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>1a679f38-6cd3-4336-91bb-1825f65c2579</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>start.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".gitignore" />
+    <Content Include="config.json" />
+    <Content Include="LICENSE" />
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="src\Static\ballResponses.json" />
+    <Content Include="src\Static\banImages.json" />
+    <Content Include="src\Static\defaults.json" />
+    <Content Include="src\Static\mentionResponses.json" />
+    <Content Include="src\Static\onMemberAdd.json" />
+    <Content Include="src\Static\onMemberRemove.json" />
+    <Content Include="src\Static\praiseImages.json" />
+    <Content Include="src\Static\quotes.json" />
+    <Content Include="src\Static\scoldImages.json" />
+    <Content Include="src\yunos_memory.db" />
+    <Content Include="yunos_memory.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\commands\8ball.js" />
+    <Compile Include="src\commands\anime.js" />
+    <Compile Include="src\commands\ban.js" />
+    <Compile Include="src\commands\channelclean.js" />
+    <Compile Include="src\commands\clean.js" />
+    <Compile Include="src\commands\delay.js" />
+    <Compile Include="src\commands\help.js" />
+    <Compile Include="src\commands\hentai.js" />
+    <Compile Include="src\commands\kick.js" />
+    <Compile Include="src\commands\manga.js" />
+    <Compile Include="src\commands\mentionresponses.js" />
+    <Compile Include="src\commands\neko.js" />
+    <Compile Include="src\commands\ping.js" />
+    <Compile Include="src\commands\praise.js" />
+    <Compile Include="src\commands\quote.js" />
+    <Compile Include="src\commands\scold.js" />
+    <Compile Include="src\commands\setdm.js" />
+    <Compile Include="src\commands\setjoin.js" />
+    <Compile Include="src\commands\setleave.js" />
+    <Compile Include="src\commands\setlevelrole.js" />
+    <Compile Include="src\commands\setlogchannel.js" />
+    <Compile Include="src\commands\stats.js" />
+    <Compile Include="src\commands\time.js" />
+    <Compile Include="src\commands\xp.js" />
+    <Compile Include="src\dbFunctions\channel.js" />
+    <Compile Include="src\dbFunctions\guild.js" />
+    <Compile Include="src\dbFunctions\index.js" />
+    <Compile Include="src\Events\index.js" />
+    <Compile Include="src\Events\onceReady.js" />
+    <Compile Include="src\Events\onMemberAdd.js" />
+    <Compile Include="src\Events\onMemberRemove.js" />
+    <Compile Include="src\Events\onMessage.js" />
+    <Compile Include="src\Events\onReady.js" />
+    <Compile Include="src\messageProcessors\index.js" />
+    <Compile Include="src\messageProcessors\measureExp.js" />
+    <Compile Include="src\messageProcessors\mentionResponses.js" />
+    <Compile Include="src\messageProcessors\spamfilter.js" />
+    <Compile Include="src\Static\index.js" />
+    <Compile Include="src\util.js" />
+    <Compile Include="src\yuno.js" />
+    <Compile Include="start.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\commands\" />
+    <Folder Include="src\dbFunctions\" />
+    <Folder Include="src\Events\" />
+    <Folder Include="src\messageProcessors\" />
+    <Folder Include="src\Static\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>
