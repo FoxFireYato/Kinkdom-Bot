@@ -4,7 +4,7 @@
   "description": "a neat lil discord boat",
   "main": "yuno.js",
     "scripts": {
-        "start": "node start.js",
+        "start": "start.js",
         "test": "eslint ."
     },
   "repository": {
