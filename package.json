@@ -3,10 +3,10 @@
   "version": "0.3.0",
   "description": "a neat lil discord boat",
   "main": "yuno.js",
-    "scripts": {
-        "start": "start.js",
-        "test": "eslint ."
-    },
+  "scripts": {
+    "start": "start.js",
+    "test": "eslint ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Aetheryx/Yuno_Gasai.git"
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/Aetheryx/Yuno_Gasai#readme",
   "dependencies": {
     "discord.js": "github:hydrabolt/discord.js#master",
+    "express": "4.16.3",
     "he": "^1.1.1",
     "moment": "^2.18.1",
     "moment-duration-format": "^1.3.0",
